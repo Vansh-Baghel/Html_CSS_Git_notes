@@ -1,0 +1,101 @@
+You can refer lectures from codewithharry series name "Complete git tutorials for Beginners in hindi" and can go accordingly with the given lecture numbers.
+
+# git config --global user.name
+# git config --global user.email
+# git add ().txt
+# git status
+# git init 
+# pwd == Present Working Directory
+# ls --> List all the files. 
+# cd (name of file/)--> This will change the path of ur .git .NOTE:- The slash will be front wala hee
+# rm -rf .git --> It will delete the content of repository when u need to go on next file k content.
+# git add --a --> Adds "ALL" the untracked files.
+# git log --> Shows the date, time and author who made changes into the file.
+# clear :- Used to clear the git screen.
+
+NOTE:- If you modify the staged file (tracked files) then that file will appear on both the stage and modified area (green         and red part resp.) To add that file in the committed/staged file, just type the add command.
+
+# git clone (url of repository) foldername 
+
+--->LECT 7
+# touch (file name) --> This will create a new file in the folder.
+
+# touch.gitignore --> This will ignore the files which we dont want in untracked files once we make changes into it.
+
+NOTE:-  USE EXTENTION FOR THE FILE TOO FOR WHICH YOU WANT TO IGNORE.
+	You have to write the file name or the directory(folder) name into that .gitignore notepad txt to ignore those type 	of files. 
+	If you want to select multiple files with common name, just type *(common_part) and all the files which have that 		common part will be ignored.  		
+	For ignoring directory changes--> (name)/		For ignoring file changes--> name		
+	For ignoring file/directory changes with same name only on outer folder:- /name/
+	
+
+--->LECT 8
+# git diff --> It compares staging area and working directory ki what are the changes made. 
+
+---> LECT 9
+# git commit -m "your comment" ---> 1. Used to add the staged file & the changes will be tracked only on local 				       				version control (only on ur system, not on github).
+				    2. Remote control system means changes will be modified even in github.
+				    3. "-m" implies to msg.			    
+# git commit -a -m "your comment" ---> This will add the tracked modified file into the staging area, but will not add the 				       		untracked file into staging part.
+# git log ---> Used to check the msgs, date & author when changes are made. Will show log of commit history.
+
+---> LECT 10
+# git rm (name.extension) --> Used to remove a particular file using git. 
+# git mv (file name) (new name) --> Used to change the name of a file.
+# git rm --cached filename --> This is used when tracked file is added to .gitignore & that file is modified. If ye use nhi 			       krte so the tracked file would've been shown in the modified area. 
+			       Change will be made into status only after commiting the file using git commit -m "any msg".
+
+---> LECT 11
+# git clone <url of the repository> <Ur repository name> 
+
+***NOTE:- Press "Q" to exit big log files if u dont wanna scroll more.***
+# git log -p :- Shows all the changes made with diff and commit features together. diff is used to see what were the 		changes made & commit is used to commit and comment the changes we made. 
+# git log -p -n :- Here n can be any value upto which u want to see the changes.
+# git log --stat :- Here all the changes will be summarized within minimum steps.
+# git --pretty=oneline :- All the commits will be seen in one line. 
+# git --pretty =short:- Will show only comment, author.
+# git --pretty=full :- Will show author, commit and comment. 
+Difference in author and commit:- Author is the one who created the file, commit is the one edited it.
+# git --since=(no of dates.days/months/years) :- Can view changes acc to the duration we put.
+# git commit --amend :- This will let us change/edit our previous comments.
+ Press "i" then edit. Once done, press "esc" then ":" "w" "q" "Enter" 
+# git commit :- If u use only git commit instead of "-m" then the editor screen will be opned and you can manually add comment into it. To exit from it 
+				you can --> press "esc" then ":" "w" "q" "Enter"  
+
+---> LECT 12
+# git restore FileName :- Used to undo the changes which were made. It restores the old file and new changes wont be see. (Lect 15 part).
+# git restore --staged <filename>:- Used to unstage  the staged file.
+# git checkout -- (filename):- Used to unmodify the modified file. The old content before the modification could be regained.
+# git checkout -f :- Used to restore all the changes made into the directory.
+
+
+---> LECT 13
+# git remote
+# git remote add origin (https://github.com/Vansh-Baghel/git_TP.git) :- Used to add the repository into git from github. Origin is the name we gave to the repository. U can change it too.
+# git push -u origin master :- Used to push files of directory to github repository. 
+# git pull --rebase :- Used to connect the local directory k changes to remote repository. After this, we need to use push -u wala tag to make changes.
+
+---> LECT 14
+# git config --global alias.(new shortform) (command_name) :- Its used when we use certain command on regular basis. It shortens the command and we dont need
+															to write big commands again and again. 
+		EG:- 1) git config --alias.st status
+			 2) git config --alias.cm command
+			 3) git config --alias.unstage 'restore --staged--' :- Used to unstage the staged file.
+
+---> Extra usefull knowledge
+# clear :- Used to clear the git screen.
+# git reset --hard :- Used to undo any changes made till the previous commit. You cannot revert the changes once the commit is done.
+# git revert <commit_ID> :- Used to undo all the changes made in a particular git commit. You can select the git commit according to ur wish. Its a
+							dangerous & very usefull command.
+							To get the commit id, use git log and then copy the big yellow colored text and just paste it in the syntax.
+							EG:- git revert 8e43b7837aa7d81368917319b6c3bf271152ee39 
+							Then the pop will appear, simple type ": w q Enter"
+							And done, all the new changes which were stored in that commit will be restored. 
+
+---> LECT 15
+# git restore FileName :- Used to undo the changes which were made. It restores the old file and new changes wont be see.
+
+	Now, if you want to make changes in a big project but also dont want to edit the original repository, you can create a branch. All the changes made		
+	in the branch will not be seen in the original repository and you can try many different stuffs without worrying about the master repository. 
+	
+# git checkout (branchName) :- You can switch your git location to the branch you want to work with.
