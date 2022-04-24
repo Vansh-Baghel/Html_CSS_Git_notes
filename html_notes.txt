@@ -1,0 +1,125 @@
+*Shortcut of vscode:-
+see cheatsheet.
+
+
+* HTML Elements
+1. <h1> to <h6> :- Accordinly the size will go o =n decreasing.
+2. <p>
+3. <br> :-  <br> elements are called empty elements. Empty elements do not have an end tag! But always end every tag to be on safer side.
+4. <hr> :- Horizontal line daalta h on nxt line.
+5. <b> or <strong> :- Bold
+6. <i> or <em> :- Italic
+7. <small> :- Small krdeta h text ko.
+8. <sup> :- SuperScript. Used to write text above.
+9. <sub> :- SubScript. Used to write texts below.
+
+* HTML Comments:- 
+<!--  	-->
+
+* HTML Lists ---> We use <li> </li> to write the steps between any type of list.
+  Nested lists:- We use list under the list and we also write the type of list.
+1. <ul> :- Unordered List.
+	   
+2. <ol> :- Ordered List.
+   <ol type=" i/I/a/A/1 "> :- This is used to change the type to numbers, roman numbers, alphabets & to small and big. 
+
+*HTML Attributes
+1. <a href> :- <a> tag defines a hyperlink. The href attribute specifies the URL of the page.
+   To open in new tab :- Use <a href="" target="_blank">
+   To change the width and height:- Use <----- width="" height="">
+   To show text if image is not displayed:- <---- alt="" --->
+
+2. <img src> :- <img> tag is used to put an image in an HTML page. The src attribute specifies the path of the image.
+				To change the alignment of image, you can create div and <div style="display: flex; justify-content: center; align-items: center ;">
+				OR 
+				Can create style in css and then    img{ display:block; margin-left: auto; margin-right: auto;}
+				
+3. <video src>
+ To display video:- 
+ A) There are many attributes through which we can control the video in different ways.
+ B) <video src="" autoplay controls loop muted poster="">
+    NOTE:- Only the downloaded video could be added using it, for yt video u have to embed it.
+    In above syntax, 
+	autoplay :- used to autoplay the video in the website. 
+	controls :- Used to provide all options which a video contains, ie, pause, volume, forward, rewind, etc.
+	muted:- Used to start the video without sound initially. Tho it can be controlled using control.
+	loop:- Plays the video once again if finished.
+	poster:- Thumbnail will be the image which we'll put.
+
+4. iframe :- 
+   Used to embed any other document into html file, eg:- Any other website into our html pg, any other video.
+   Video can be embed directly by yt< clicking share < Embed < then copy the code.
+
+
+* HTML Style:-
+   These are very important attributes and it can be used in any other attribute to change the text or image.
+   EG:- <div style="text-align=center;">
+	<h1 style="(any attribute)">
+1. Style attribute:- 
+a) Color :- Used to add color to texts.
+b) Background-color :- Used to change the background color of html file.
+c) font-family
+d) font-size
+e) text-align
+ 
+*HTML quotations:- 
+<blockquote>,<q>, <abbr>, <address>, <cite>, and <bdo>
+
+* HTML Forms:-
+1. input element:- Used to take input from the user.
+ Attributes:-
+a) type="(predefined words)"
+  Some predefined words are:-
+	text:- simply takes the text from the user.
+	password:- Converts the text into *
+	radio:- User can select one value frm multiple options
+	checkbox:- Can tick multiple values
+	file:- In this, user can select its file to upload
+	submit :- Used to transfer the data from user to our database.
+	reset :- Used to erase the user data from the database.
+	Email :- Automatically detects the email if previously used & gives error if email is not properly entered.
+Check more from w3schools. There are many
+b) name="(anyName)"
+   This is used to send the value into the database whenever user inputs the value. The (value of name(anyName)= input of name) will be seen in the data.
+   The input will not reach the data without this element.
+   The name  value must be unique for different inputs.
+c) required :- User cannot proceed to submit the form without that line. Otherwise, people will submit blank forms
+d) value:- We can input the value from user or just write and let the user select its choice.
+e) placeholder="" :- Used to display the text in the box before anythings gets typed.
+2. textarea :- Used to write long texts used for commenting or feedback.
+	a) cols :- Used to give height to the box.
+    b) rows :- Used to give width to the box.
+3. select & option 
+
+* Semanted & non semanted tags concept dekhlo.
+A) Semanted tags are the tags with some meaning in its name.
+B) Non semanted tags are the tags without meaning.
+   Two types of non semanted tags are:-
+	a) <div> :- It is block level element. Means tags with block level property will leave space and line on web page. EG:- <p>
+	b) <span> :- It is inline level element. Means value will start from the same line. EG:- <em>
+
+* Making table :- 
+1. <table> :- Table will start and end from the tag
+2. <tr> :- Defines the row of table. For each row, tr is to be used again and again.
+3. <td> :- Used to store the data inside that block. We use td multiple times to store data to the right side inside our table.
+4. <th> :- Heading inside that table ka column.
+5. rowspan :- Used to join 2 rows.
+6. colspan:- Used to join 2 columns.
+7. <thead> <tbody> <tfoot> :- These are the 3 structures used to draw a table.
+
+*HTML entites ---> Used to display codes, emojis on the web pg which usually is not possible through keyboard. All starts with ampersand (&).
+1. non-breaking space		---> &nbsp;
+2. < less than      		---> &lt;
+3. > greater than		---> &gt;
+4. & ampersand		--->&amp;
+Refer more on w3schools
+
+Width could also be written in percentage. From using 100%, if we want to divide into 3 parts then best way to fit the screen is 33.3% .
+
+
+
+
+
+
+
+
