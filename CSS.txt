@@ -159,3 +159,40 @@ b) Relative units:- depends on web page or parent element.
 	border is for the white box to get green color at the corners. 
 	another border tag used to take 
 
+* Debugging in CSS
+	Right click krne se on any web page, you'll see option to "view page source" & "Inspect".
+	1) View page source:- Can view full code written to make that particular web page.
+	2) Inspect:- Just explore it yourself, kind of same to view page. Computed option bhi explore krna. Debugging is usually done with this, styles waale option se. 
+	RECOMMENDED:- View the box ke dimensions, the way padding, width, height are applied. 
+
+   Difference in view page source & inspect:- Syntax mai koi error hua then it wont be corrected in view page source on the otherr hand, in inspect the correct code    will be displayed. 
+
+* Clip path generator:- 
+	Used to change the size and shape of the image without putting much efforts. Search "Clip path generator" on google then select appropriate shape,
+	copy the url & paste in the CSS.
+	
+* Difference in box-sizing.border-box & box-sizing.content-box :-
+	 
+	width: 160px;
+	height: 80px;
+	padding: 20px;
+	border: 8px solid
+
+	box-sizing: content-box;
+	/* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px 		Left & right padding and border are addded.
+	Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+	Content box width: 160px
+	Content box height: 80px */
+	}
+
+	box-sizing: border-box;
+	/* Total width: 160px		Width remains the same and both the padding and border are added into the width itself.
+	Total height: 80px
+	Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
+	Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
+	
+* CSS Layers:- 
+1) z-index :-
+	Used to give the priority number to the overlapping boxes. The eg of box overlap will be in html files. 
+	Greater the number of index, more will be the priority, means it'll be at the top.
+	Using "position" is important & necessary with z-index.
