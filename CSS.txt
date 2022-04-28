@@ -196,3 +196,20 @@ b) Relative units:- depends on web page or parent element.
 	Used to give the priority number to the overlapping boxes. The eg of box overlap will be in html files. 
 	Greater the number of index, more will be the priority, means it'll be at the top.
 	Using "position" is important & necessary with z-index.
+
+* Responsiveness
+	1) Responsive web design makes your web page look good on all devices. It varies with the change in the width of the screen.
+	2) We use "and" operator to change the layout with respect to the width. 
+	3) To use "or" operator simple add another ',' after the 'and ()' .
+	EG:- @media screen and (max-width:400px), (max-width:1000px); {------} .
+		Syntax used =:- @media , @media screen, etc.
+NOTE:- Div is used to write text in a given block. It doesnt use the whole line like p tag. So, div is used for writing text with space in the same line.
+	Use box-sizing: border-box for viewing the text in box in the same line.
+	
+Solved a problem stmt pls check it out:-  Challenge_Responsiveness name se h.
+	
+	
+
+
+
+
