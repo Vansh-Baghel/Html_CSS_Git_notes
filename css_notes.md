@@ -12,7 +12,7 @@ EG:- color:green
 
 a) **Inline**:- `<tagname style="property:value;">`
 
-b)** External**:-
+b) **External**:-
 
 - Can create new file of css and then link it to html.
 
@@ -278,7 +278,7 @@ Sytnax to fit img inside the box:-
 
 4. Width: 100% :- This % is according to the web page.
 
-## Pratice Q)
+## Practice Q)
 
 Contact_test :-
 
