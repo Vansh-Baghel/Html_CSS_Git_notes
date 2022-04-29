@@ -364,5 +364,101 @@ _Difference in view page source & inspect_:- Syntax mai koi error hua then it wo
 
 - Use **box-sizing: border-box** for viewing the text in box in the same line.
 
-- Solved a problem stmt pls check it out:-
-  _Challenge_Responsiveness_
+- Solved a problem stmt, check it out:-
+
+  [Responsiveness](https://codepen.io/Vansh-Baghel/pen/eYVOxQN)
+
+  **NOTE**:- Use inspect option and change the width of the page to see the changes.
+
+# Display
+
+> Syntax:- display : (value);
+
+## Types of Values
+
+1. **Inline** :- Displays an element in the same line. (like `<span>`).
+
+- Any height and width properties will have no effect.
+
+2. **Block**:- Displays an element which starts on a new line, and takes up the whole width.
+
+### Tags important to use with display tag.
+
+#### 1. **Float**:-
+
+Used to adjust the img or text in any direction.
+
+- None :- The element does not float (will be displayed just where it occurs in the text). This is default.
+
+```CSS
+float: left/right/none/inherit;
+```
+
+#### 2. **Clear**:-
+
+Used to specify what should happen with the element that is next to a floating element.
+
+```
+clear: left/right/none/inherit/both;
+```
+
+### 3. **Position** :-
+
+1. **Static**:- It is not affected by the top, bottom, left, and right properties.
+
+- HTML elements are positioned static by default.
+
+2. **Relative**:- top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+
+   EG:-
+
+```CSS
+{position: relative;
+ top:10px;
+}
+```
+
+3. **Fixed**:- This position of it will remain at the same place on the screen even if we scroll the pg.
+
+4. **Sticky**:-
+
+- A sticky element toggles between relative and fixed.
+- If, we give `top,bottom` tags of relative, then it'll act as fixed (it'll not move even if we scroll) .
+
+- Else, using sticky doesnt make any difference.
+
+5. **Absolute**:- This will overlap the boxes and the text.
+
+### Challenge question:- [Position_clear_float_responsiveness](https://codepen.io/Vansh-Baghel/pen/ZErzwoz)
+
+- _**Explanation**_ :-
+
+1. **Url method**:- Copy the link address of img from google so you dont need to place the downloaded file in the folder.
+
+2. **Class** :-
+
+- Here, 2 classes are in one `<div class="box box-1">` , which means ki box will be used as common class if you want any change in 3-4 steps & box-1 will be unique for that particular (basically to change the position it must be unique).
+- Also, can use class in img.
+
+3. **p** :-
+
+- We need to use paragraph tag to write the text bcoz we need the text besides the img, if u use div then the text will be visible down to the image.
+- We can add clear, align tags for p to adjust the text for _@media_.
+
+4. **div in css** :-
+
+- _Overflow_ is used to hide the overlapping of texts while changing the width.
+- _Widht & height_ are in vw & vh which means % of the web pg.
+- _Margin_ is used in shortcut method whose syntax is
+
+```CSS
+margin:top right bottom left
+```
+
+5. **img in CSS** :-
+
+- Box type around image in added by changing height & width of it.
+
+6. **@media** :-
+
+- _Text_ is aligned to center and its cleared from both the side so that we dont need to adjust the text again & again when the image is left & right.
