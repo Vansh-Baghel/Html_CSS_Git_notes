@@ -443,6 +443,9 @@ clear: left/right/none/inherit/both;
 3. **p** :-
 
 - We need to use paragraph tag to write the text bcoz we need the text besides the img, if u use div then the text will be visible down to the image.
+
+* If you want to view the text on same line by using _div_, better use `display:inline` for viewing the text besides the img.
+
 - We can add clear, align tags for p to adjust the text for _@media_.
 
 4. **div in css** :-
