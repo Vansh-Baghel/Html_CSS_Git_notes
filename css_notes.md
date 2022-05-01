@@ -642,7 +642,7 @@ _**Explanation**_ :-
 
 - Here are some values which we use with this element.
 
-  a) **flex-start**
+  a) **flex-start** :- Same as cross-start in the diagram.
 
   b) **flex-end**
 
@@ -706,3 +706,61 @@ Used to give the max width to boxes.
 ### 11. **flex-shrink:(value)** :-
 
 - Same as grow, just the opposite happens.
+
+### 12. **flex-flow** :-
+
+- It is a shorthand method, `flex-flow:<flex-direction flex-wrap>`
+
+### 13. **flex** :-
+
+- another shorthand method `flex:<flex-grow flex-shrink flex-basis> `
+
+### Challenge1 of flexbox:- [Challenge1_flexbox](https://codepen.io/Vansh-Baghel/pen/VwQwxoL)
+
+_**Explanation**_ :-
+
+- HTML explanation:-
+  - 3 containers are needed as 3 rows of boxes are present.
+  - Nested div ka parent div ka end tag must be closed at after all the nested div are completed.
+
+* CSS explanation :-
+  - **flex** is used instead of width.
+  - _div.li_ & _li.div_ are different. _div.li_ refers to li class and _li.div_ refers to div present inside the li.
+
+### Challenge2 of flexbox:- [Challenge2_flexbox](https://codepen.io/Vansh-Baghel/pen/ZErEomR)
+
+_**Explanation**_ :-
+
+- HTML explanation:-
+  - 2 containers are used as we need 2 rows where each row contains 3 other divs.
+  - We need to assign 3 divs for each container as they are 3 different boxes.
+  - Image ka url is shortened by bitly from google bcoz image address is too big to be copied from google's image which doesnt look appropriate in the code.
+
+* CSS explanation :-
+  - Here, **align-self** is used in **row class** to align the column upwards in the line of middle box.
+  - In img, display & margins are used to align the img in the center.
+
+### Challenge3 of flexbox:- [Challenge3_withoutflex](https://codepen.io/Vansh-Baghel/pen/WNMNJQx)
+
+### Challenge3 of flexbox:- [Challenge3_withflex](https://codepen.io/Vansh-Baghel/pen/dydyeGw)
+
+_**Explanation**_ :-
+
+Without flex one was much easier.
+
+- HTML explanation :-
+
+  - **div container** is used to store 2 divs,ie, r1,r2. Both the divs have different width.
+  - Then **r2** is divided into 3 divs & 1st and 3rd divs have same style, but the 2nd div differs.
+
+- CSS explanation for without flex:-
+
+  - **display flex** is used to align the boxes in a row.
+  - **r1 and r2** both have different widths.
+  - lr1 contains **box-sizing** so that the bottom box is in same line as of the r1.
+
+- CSS explanation for with flex:-
+  - The only new concept here was the use of **flex-grow**. Its used to increase the width of the box.
+  - Instead of using width, we use flex-grow.
+  - Also, one new concept is being understood that vh and vw concept is not applicable for inheritance and % concept is according to the parent element.
+  * vh and vw is according to the web page.
