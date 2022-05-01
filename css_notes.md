@@ -568,6 +568,9 @@ clear: left/right/none/inherit/both;
 
 ### Challenge question:- [Position_clear_float_responsiveness](https://codepen.io/Vansh-Baghel/pen/ZErzwoz)
 
+**Goal**
+![e](Position_clear_float_responsiveness.jpeg)
+
 - _**Explanation**_ :-
 
 1. **Url method**:- Copy the link address of img from google so you dont need to place the downloaded file in the folder.
@@ -604,6 +607,9 @@ margin:top right bottom left
 - _Text_ is aligned to center and its cleared from both the side so that we dont need to adjust the text again & again when the image is left & right.
 
 ### Challenge Question:- [Position_sticky](https://codepen.io/Vansh-Baghel/pen/PoQoPNx)
+
+**Goal**
+![e](sticky.jpeg)
 
 _**Explanation**_ :-
 
@@ -717,6 +723,9 @@ Used to give the max width to boxes.
 
 ### Challenge1 of flexbox:- [Challenge1_flexbox](https://codepen.io/Vansh-Baghel/pen/VwQwxoL)
 
+**Goal**
+![e](flex1.jpeg)
+
 _**Explanation**_ :-
 
 - HTML explanation:-
@@ -728,6 +737,9 @@ _**Explanation**_ :-
   - _div.li_ & _li.div_ are different. _div.li_ refers to li class and _li.div_ refers to div present inside the li.
 
 ### Challenge2 of flexbox:- [Challenge2_flexbox](https://codepen.io/Vansh-Baghel/pen/ZErEomR)
+
+**Goal**
+![e](flex2.jpeg)
 
 _**Explanation**_ :-
 
@@ -743,6 +755,9 @@ _**Explanation**_ :-
 ### Challenge3 of flexbox:- [Challenge3_withoutflex](https://codepen.io/Vansh-Baghel/pen/WNMNJQx)
 
 ### Challenge3 of flexbox:- [Challenge3_withflex](https://codepen.io/Vansh-Baghel/pen/dydyeGw)
+
+**Goal**
+![e](flex3.jpeg)
 
 _**Explanation**_ :-
 
