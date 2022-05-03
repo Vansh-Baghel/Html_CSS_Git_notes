@@ -245,6 +245,8 @@ _vmin:- minimum value among height and width will be used here._
 
 _vmax:- maximum value among height and width will be used here._
 
+_em :- 2em means 2 times the size of the current font._
+
 # Box Model Styling
 
 - Learn to write texts in box form.
@@ -751,6 +753,10 @@ _**Explanation**_ :-
 * CSS explanation :-
   - Here, **align-self** is used in **row class** to align the column upwards in the line of middle box.
   - In img, display & margins are used to align the img in the center.
+  * **_Replacement done after flex concept_** :-
+    - `display:flex` replaced with `display:grid` in the whole container so that the boxes of divs may fit the outer box.
+    - grid-template-column is used to fit 3 divs in one row.
+    * Also, removed width from row_1 which was restricting the divs to increase the width.
 
 ### Challenge3 of flexbox:- [Challenge3_withoutflex](https://codepen.io/Vansh-Baghel/pen/WNMNJQx)
 
@@ -779,3 +785,99 @@ Without flex one was much easier.
   - Instead of using width, we use flex-grow.
   - Also, one new concept is being understood that vh and vw concept is not applicable for inheritance and % concept is according to the parent element.
   * vh and vw is according to the web page.
+
+# CSS Grid Layout
+
+- Grid is 2 dimensional. FLex is one dimensional.
+- **Cheatsheet** for vscode :- This will print the div class 5 times with class name as row 1, row 2, row 3 and so on.
+  > div.container{row $}\*5
+
+## **1. display: grid** :-
+
+- Used to properly adjust the boxes.
+- Responsiveness of grid is by default very good.
+
+## **2. grid-template-<rows/columns: size>** :-
+
+- Column is used to make changes in the width and row is used to make changes in the height.
+
+* The rows or column will adopt the size we assign to it & also the alignment. This is way better than using width element.
+* The size have 2 values:- _normal px,pc,etc_ and _fr_
+  - fr is fraction.
+
+- Size of each boxes are need to be given manually. To simple that work we use `repeat` element.
+
+## **3. grid-auto-<rows/columns: size>** :-
+
+- This will resize all the child classes present in parent class.
+- Set a default size for the columns in a grid.
+
+```CSS
+            grid-auto-rows: 120px;
+
+```
+
+## **4. Gaps** :-
+
+1. column-gap
+2. row-gap
+3. grid-gap :- column+row
+
+## **5. grid-row/column-/start/end** :-
+
+- Used to change position of any particular box.
+- It uses the number of given line when we inspect and click grid in given code.
+
+### Challenge1-Grid :- [Challenge1_Grid](https://codepen.io/Vansh-Baghel/pen/ZErYmyY)
+
+**Goal**
+
+![grid](Grid1.png)
+
+- _\*\* HTML Explanation:-_\*\*
+
+  - **structure** :-
+    - One container containing 6 sub class for each column.
+    - Each of the sub classes contains divs because each column has boxes which are completely fitted w.r.t its width.
+    - We know that we use div for printing boxes on new row, so for each boxes into each sub class to be printed on the new line, we use div.
+
+* _\*\* CSS Explanation:-_\*\*
+
+  - **container** :-
+    - Grid column is used to divide the container into 6 parts horizontally.
+
+> child and child.div are different. child div refers to each box, while child refers to the whole column of boxes.
+
+- **child** :-
+
+  - By using display:grid, we easily fitted all the child boxes into the container with its full width.
+
+- **child.div** :-
+  - We added all the properties required for each box into this class.
+
+* **The grid-gap** :-
+  - Use it wisely, we used in container to get space between the major 6 divs which are fitted in the screen.
+  - We used in child to get the space between the 28 individual divs.
+
+### Challenge2-Grid :- [Challenge2_Grid](https://codepen.io/Vansh-Baghel/pen/eYVmQEN)
+
+**Goal**
+
+![grid](Grid2.png)
+
+- _\*\* HTML Explanation:-_\*\*
+  - **Structure** :-
+    - We created a container which contains 2 major div classes.
+    - Those 2 classes are for Nav and the remaining boxes.
+    - 2nd div is a double-nested div which consists of total 3 rows, ie, 3 sub divs.
+    - The 2nd sub div is itself a nested div because we need 2 boxes in the same row. If **sec_row** wasn't been applied then both the boxes in the **sec_row** might've been printed on different rows.
+    - As we increase the size of the nested div by using `template row`, the size of nav automatically increases to match up with the height. Also, the width of footer is increased in the same manner due to the use of `template column` in the sec_row
+
+* _\*\* CSS Explanation:-_\*\*
+
+  - **container** :-
+
+  * Easily both the major divs are separated by template-column
+
+  * **nested_lists** :-
+    - display is used to fit all the boxes according to thr given height in template.
