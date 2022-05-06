@@ -881,3 +881,45 @@ Without flex one was much easier.
 
   * **nested_lists** :-
     - display is used to fit all the boxes according to thr given height in template.
+
+# Transition & Animation
+
+## Transition properties
+
+- You can edit any transition by going to inspect and manually making changes.
+- Transition couldn't handle complex changes, so for that we use animation.
+
+### 1. transition
+
+- It is a shorthand property.
+- `transition: transition-property, transition-duration, transition-timing-function, transition-delay `;
+
+### 2. transition-duration
+
+- It gives the time period for the transition to occur
+
+### 3. transition-delay
+
+- It will activate the transition after the given time period.
+
+## Animation Properties
+
+Two types of animation property exists.
+
+1. **Style** :- Normal like others.
+
+2. **Keyframe** :- Starts with @ . @keyframe (name_of_animation){}
+
+### 1. animation
+
+- It is a shorthand property.
+
+* `animation: animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode animation-play-state ;`
+* Well, this was the syntax of the shorthand property. Not necessary to maintain its order.
+
+* **Animation&Transition_try**:- [animation & transition](https://codepen.io/Vansh-Baghel/pen/XWZmqRN)
+  **_Explanation_** :-
+  - We used tranform to move the box.
+  - If transition is used into hover then the transition wont flow back. If we u=put it directly into the child, then it will complete the transition.
+  * Used all the animation and transition into hover.
+  * Keyframes must be outside and must be treated as a new style. The **identifier** (@keyframe identifier) must be the property on which we want the transition to occur.
