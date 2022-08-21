@@ -945,6 +945,12 @@ Two types of animation property exists.
 ## Media Query magic SCSS
 * We can use **media queries** inside that element itself which will reduce the step to mention the element name everytime and media queries will be just below the element name .
 
-## Mixins (Awesome)
+## Mixins (One liner legend)
 * Here we can avoid the repeating code steps everytime in CSS. We assign function using **@mixin** and it will include those CSS lines which are being repeated.
+
 * By using **@include funcName()** , we can see those lines in the CSS file but in SCSS file we are just putting onr line code .
+
+## Ampersand Operator (Pseudo elements cleaner)
+* By using **&** , we can join any class, id or pseudo elements by nesting it .
+* Nesting means we dont need to repeat the main element , just need to write **&:hover{}** or **&.className** inside the curly braces of main element.
+* Makes life so simple.
