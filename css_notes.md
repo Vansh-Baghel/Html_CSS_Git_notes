@@ -923,3 +923,28 @@ Two types of animation property exists.
   - If transition is used into hover then the transition wont flow back. If we u=put it directly into the child, then it will complete the transition.
   * Used all the animation and transition into hover.
   * Keyframes must be outside and must be treated as a new style. The **identifier** (@keyframe identifier) must be the property on which we want the transition to occur.
+
+# SASS
+ 
+## SCSS
+* Visit **sass lang.com**. We need to install ruby and then write the cmd in terminal to insta *gem*.
+* Create a new file with extension **.sass** but sass is different fron CSS as it doesnt have curly bracers and semi colons which makes the code ugly, therefore will use **.scss** extension.
+
+## Nested Selectors
+* We can write another tag inside the curly braces of the selector .
+* To convert the SCSS file to CSS file we use command.
+
+## Variable
+* We can make a variable for any property value like any color code by using a prefix **$**.
+
+## Partial
+* We name this file starting with under-score (\_). We can copy all the variables in this file and then import in the other file where its used.
+* We can reduce the run-time by using only 1 CSS file and rest of them SCSS.
+* When we import another CSS , it tskes some time to load and if we use SCSS then we directly get that code in the CSS avoiding the creation of new file.
+
+## Media Query magic SCSS
+* We can use **media queries** inside that element itself which will reduce the step to mention the element name everytime and media queries will be just below the element name .
+
+## Mixins (Awesome)
+* Here we can avoid the repeating code steps everytime in CSS. We assign function using **@mixin** and it will include those CSS lines which are being repeated.
+* By using **@include funcName()** , we can see those lines in the CSS file but in SCSS file we are just putting onr line code .
